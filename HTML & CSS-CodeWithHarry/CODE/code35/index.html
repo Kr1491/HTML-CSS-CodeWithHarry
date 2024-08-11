@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector: First Child</title>
+  <style>
+    .box:nth-child(odd){
+      background-color: red; /*to style the div of odd position*/
+    }
+
+    .box::first-line{  /*to style the first line*/
+      color: yellow;
+    }
+
+    input::placeholder{
+      color: grey;
+    }
+
+    ::selection{        /*to style when the text is selected*/
+      color: aqua;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="boxes">
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repellendus blanditiis consequatur quas libero. Inventore reprehenderit dicta distinctio ipsa dignissimos ipsum fugiat provident id mollitia! Enim nemo, fugit beatae veniam alias quisquam? A architecto, alias debitis optio magni placeat harum eaque, cumque esse inventore laborum dicta quibusdam vitae accusantium autem, sit repudiandae recusandae ut! Atque odio nulla possimus obcaecati aspernatur deserunt rem alias consequatur vero perspiciatis at, vel eos architecto, quos, facere doloribus suscipit? Exercitationem animi dolor alias et sed soluta asperiores reiciendis eligendi similique maxime enim quae, velit eaque tempore id incidunt quidem doloremque porro mollitia fugiat ut. Laudantium?</div>
+    <div class="box">I am a box</div>
+    <div class="box">I am a box</div>
+    <input type="text" placeholder="Enter your name">
+
+  </div>
+</body>
+</html>

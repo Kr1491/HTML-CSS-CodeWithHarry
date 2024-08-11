@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+    .main{
+      width: 500px;
+      border: 2px solid black;
+      height: 300px;
+      display: flex;
+    }
+    .box{
+      width: 50px;
+      height: 50px;
+      border: 2px solid rgb(54, 157, 7);
+      background-color: yellowgreen;
+    
+      transition: 1s ease;
+      display: flex;
+      
+      align-items: end;
+      justify-content: center;
+      color: white;
+    }
+    .box:active{
+      transform: translateX(448px) rotateZ(40deg);
+      background-color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="box">
+      Home
+    </div>
+
+  </div>
+</body>
+</html>

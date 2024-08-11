@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 500px;
+      height: 500px;
+      border: 2px solid black;
+    }
+
+    .box{
+      width: 50px;
+      height: 50px;
+      border: 2px solid red;
+      background-color: yellow;
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: krishna1491 3s ease-in-out infinite,
+                 kello 3s ease-in-out infinite;
+    }
+
+    @keyframes krishna1491 {
+      from{
+        background-color: yellow;
+      }
+      to{
+        transform: translateX(100px);
+      }
+    }
+
+    @keyframes kello {
+      0%{
+        background-color: yellow;
+      }
+
+      10%{
+        background-color: green;
+      }
+
+      20%{
+        background-color: blue;
+      }
+      
+      30%{
+        background-color: purple;
+      }
+
+      40%{
+        background-color: rgb(225, 0, 255);
+      }
+
+      50%{
+        background-color: rgb(255, 0, 111);
+      }
+
+      60%{
+        background-color: rgb(255, 0, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+
+    </div>
+  </div>
+  
+</body>
+</html>
